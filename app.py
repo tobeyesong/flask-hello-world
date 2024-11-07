@@ -54,7 +54,7 @@ def db_select():
     try:
         # Establish a connection to the PostgreSQL database using the connection URL.
         # Replace "your_db_url_here" with the actual database connection string.
-        conn = psycopg2.connect("your_db_url_here")
+        conn = psycopg2.connect("postgresql://lab10_db_97vf_user:F2SHYRLNi59nqfsfJ7PpMp0aXmyMzsjn@dpg-csm2r1bqf0us73frn24g-a/lab10_db_97vf")
         
         # Create a cursor object to interact with the database.
         cur = conn.cursor()
