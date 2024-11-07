@@ -101,3 +101,14 @@ def db_select():
             conn.close()
 
 
+@app.route('/db_drop')
+def db_drop():
+    conn = psycopg2.connect("postgresql://lab10_db_97vf_user:F2SHYRLNi59nqfsfJ7PpMp0aXmyMzsjn@dpg-csm2r1bqf0us73frn24g-a/lab10_db_97vf")
+    cur = conn.cursor()
+    cur.execute("DROP TABLE Basketball;")
+    conn.commit()
+    cur.close()
+    conn.close()
+    return "Basketball Table Dropped"            
+
+
