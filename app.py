@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello World from --your name-- in 3308"
+    return "Hello World from --Toan Lam-- in 3308"
 
 @app.route('/db_test')
 def db_test():
