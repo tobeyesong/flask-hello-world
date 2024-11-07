@@ -4,7 +4,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello World from --Toan Lam-- in 3308"
+    return """
+    <html>
+        <body>
+            <p>Name: Toan Lam</p>
+            <p>CU ID: tola6570</p>
+            <p>GitHub Username: tobeyesong</p>
+        </body>
+    </html>
+    """
 
 @app.route('/db_test')
 def db_test():
